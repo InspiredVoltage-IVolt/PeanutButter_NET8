@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>disable</Nullable>  
+    <Configurations>Debug;Release</Configurations>
+    <Platforms>AnyCPU</Platforms>
+      <RootNamespace>ACT.Applications.PeanutButterINI</RootNamespace>
+      <Title>INI Library</Title>
+      <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+      <Description>INI Library DLL Upgrade</Description>
+      <Copyright>2024 - IVOLT</Copyright>
+      <PackageProjectUrl>https://www.ivolt.io/</PackageProjectUrl>
+      <PackageReadmeFile>readme.md</PackageReadmeFile>
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+      <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+      <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+      <AnalysisLevel>none</AnalysisLevel>
+      <Version>2.10.1.1</Version>
+      <Authors>ACT + PeanutButter.INI</Authors>
+      <Product>ACT.PeanutButter.INI</Product>
+      <BaseOutputPath>C:\ACT\Releases\ACT_PeanutButter_INI\Builds\$(Version)\$(Platform)\$(Configuration)\</BaseOutputPath>
+      <PackageOutputPath>C:\ACT\Releases\ACT_PeanutButter_INI\Packages\$(Version)\$(Platform)\$(Configuration)\</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="readme.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="readme.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+  </ItemGroup>
+
+</Project>
